@@ -1,0 +1,1 @@
+const tail = (array) => array.slice(1);
