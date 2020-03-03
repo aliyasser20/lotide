@@ -14,5 +14,3 @@ const assertArraysEqual = (array1, array2) => {
   const message = eqArrays(array1, array2) ? `✅✅✅ ${array1} === ${array2}` : `🛑🛑🛑 ${array1} !== ${array2}`;
   console.log(message);
 };
-
-assertArraysEqual([1, 2, 3], [1, 2]);

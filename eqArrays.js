@@ -11,6 +11,7 @@ const eqArrays = (array1, array2) => {
       result = el === array2[index];
     }
   });
+  if (array1.length === array2.length && array1.length === 0) result = true;
   return result;
 };
 
