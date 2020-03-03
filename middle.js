@@ -1,8 +1,3 @@
-const assertEqual = (actual, expected) => {
-  const message = actual === expected ? `✅✅✅ ${actual} === ${expected}` : `🛑🛑🛑 ${actual} !== ${expected}`;
-  console.log(message);
-};
-
 const assertArraysEqual = (array1, array2) => {
   let result;
   if (array1.length !== array2.length) result = false;
