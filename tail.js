@@ -1,1 +1,3 @@
-const tail = (array) => array.slice(1);
+const tail = (array) => array[array.length - 1];
+
+module.exports = tail;
