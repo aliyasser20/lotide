@@ -1,20 +1,3 @@
-const eqArrays = (array1, array2) => {
-  if (array1.length !== array2.length) return false;
-  let result;
-  array1.forEach((el,index) => {
-    if (result !== false) {
-      result = el === array2[index];
-    }
-  });
-  if (array1.length === array2.length && array1.length === 0) result = true;
-  return result;
-};
-
-const assertArraysEqual = (array1, array2) => {
-  const message = eqArrays(array1, array2) ? `✅✅✅ [${array1}] === [${array2}]` : `🛑🛑🛑 [${array1}] !== [${array2}]`;
-  console.log(message);
-};
-
 const middle = (inputArray) => {
 
   const middleIndex = Math.floor(inputArray.length / 2);
@@ -24,9 +7,4 @@ const middle = (inputArray) => {
   return [inputArray[middleIndex]];
 };
 
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = middle;
