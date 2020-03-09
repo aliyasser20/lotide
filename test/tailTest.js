@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const tail = require("../tail");
+const {tail} = require("../index");
 
 describe("#tail", () => {
   it("should not be equal", () => {

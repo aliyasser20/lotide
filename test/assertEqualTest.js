@@ -1,4 +1,4 @@
-const assertEqual = require("../assertEqual");
+const {assertEqual} = require("../index");
 
 assertEqual("y", "y");
 assertEqual("y", "x");
