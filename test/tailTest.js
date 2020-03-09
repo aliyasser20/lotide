@@ -1,6 +1,21 @@
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 const tail = require("../tail");
 
-assertEqual(tail(["o", 8, "f"])[0], "w");
-assertEqual(tail(["w", "w", "w"])[0], "w");
-assertEqual(tail(["w", 8, "w", 5])[0], 8);
+
+describe("#tail", () => {
+  it("should not be equal", () => {
+    const input = ["o", 8, "f"];
+    const expected = "w";
+    assert.notEqual(tail(input)[0], expected);
+  });
+  it("should be equal", () => {
+    const input = ["w", "w", "w"];
+    const expected = "w";
+    assert.strictEqual(tail(input)[0], expected);
+  });
+  it("should be equal", () => {
+    const input = ["w", 8, "w", 5];
+    const expected = 8;
+    assert.strictEqual(tail(input)[0], expected);
+  });
+});
