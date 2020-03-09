@@ -1,7 +1,6 @@
 const assert = require("chai").assert;
 const tail = require("../tail");
 
-
 describe("#tail", () => {
   it("should not be equal", () => {
     const input = ["o", 8, "f"];

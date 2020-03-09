@@ -38,6 +38,8 @@ const assertObjectsEqual = (object1, object2) => {
   console.log(message);
 };
 
+module.exports = assertObjectsEqual;
+
 const ab = { a: {new: 5, old: 8}, b: "2", c: [45, 89, "yes"] };
 const ba = { c: [45, 89, "yes"], b: "2", a: {new: 5, old: 8} };
 const abc = { a: "1", b: "2", c: "3" };

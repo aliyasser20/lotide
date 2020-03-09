@@ -23,6 +23,8 @@ const map = (array, callback) => {
   return newArray;
 };
 
+module.exports = map;
+
 const results1 = map(words, word => word[0]);
 const results2 = map(words, (el) => el.length);
 
